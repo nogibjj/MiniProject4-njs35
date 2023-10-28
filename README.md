@@ -1,12 +1,12 @@
 
 # Cloud-Hosted Notebook Data Manipulation
 
-### Project Overview
-I ingested and preformed EDA on the popular Tianic dataset. I used Google Colab for this project and uploaded the corresponding .ipynb file to this repo. The link for the Colab Notebook is listed below for anyone to try out. I also included some of the generated plots down below.
+## Project Overview
+I ingested and preformed EDA on the popular [Tianic dataset](https://github.com/datasciencedojo/datasets/raw/master/titanic.csv). I used Google Colab for this project and uploaded the corresponding .ipynb file to this repo. The link for the Colab Notebook is listed below for anyone to try out. I also included some of the generated plots down below.
 
 [Google Colab Link](https://colab.research.google.com/drive/1CA8Q5qEPIu_J-dlCaqyfj274NJUw8f60?usp=sharing)
 
-### EDA Description
+## EDA Description
 The initial Exploratory Data Analysis (EDA) involved creating fundamental plots to understand key aspects of the Titanic dataset. These plots included:
 
 - A bar plot depicting the count of survivors, providing an overall view of survival outcomes.
@@ -21,3 +21,16 @@ The initial Exploratory Data Analysis (EDA) involved creating fundamental plots 
 - A bar plot was created providing a clear comparison of survival rates across different classes. Additionally, a grouped bar plot was generated to compare survival rates by gender within each class. Finally, a boxplot was used to compare fare distributions between survivors and non-survivors.
 
 These tasks collectively provide a comprehensive exploration of the Titanic dataset, offering insights into factors affecting survival rates such as class, age, gender, and fare. The range of plots and analyses performed offer a well-rounded understanding of the dataset's characteristics and relationships between variables.
+
+
+## Data Analysis Preview
+
+![Alt text](img/class_dis.png)
+
+![Alt text](img/class_surv.png)
+
+![Alt text](img/age_dis.png)
+
+![Alt text](img/age_surv.png)
+
+![Alt text](img/fare_surv.png)
