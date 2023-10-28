@@ -1,36 +1,23 @@
-[![Build Status](https://github.com/NickStrauch13/python-template/actions/workflows/python-ci.yml/badge.svg)](https://github.com/NickStrauch13/python-template/actions)
 
-# Python Template
+# Cloud-Hosted Notebook Data Manipulation
 
-A general use Python template.
+### Project Overview
+I ingested and preformed EDA on the popular Tianic dataset. I used Google Colab for this project and uploaded the corresponding .ipynb file to this repo. The link for the Colab Notebook is listed below for anyone to try out. I also included some of the generated plots down below.
 
-## About the template
-- Inside the ``.devcontainer`` directory, you'll find a Dockerfile and devcontainer.json. The Dockerfile outlines how to construct the container, while other settings in this directory manage the development environment configuration.
+[Google Colab Link](https://colab.research.google.com/drive/1CA8Q5qEPIu_J-dlCaqyfj274NJUw8f60?usp=sharing)
 
-**Note:** Modify the python path to the appropriate repository name in the Dockerfile:
-![Alt text](img/path_line.png)
+### EDA Description
+The initial Exploratory Data Analysis (EDA) involved creating fundamental plots to understand key aspects of the Titanic dataset. These plots included:
 
-- The ``.github/workflows`` directory houses GitHub Actions configurations, enabling the setup of automated pipelines for building, testing, and deploying your project.
+- A bar plot depicting the count of survivors, providing an overall view of survival outcomes.
+- A bar plot displaying the distribution of passengers across different classes, giving insight into the class demographics.
+- A grouped bar plot illustrating survival status based on passenger class, offering a comparison of survival rates among different classes.
+- A histogram showcasing the age distribution of passengers, helping to understand the age demographics onboard.
+- A histogram highlighting the survival distribution by age group, offering insights into how age affected survival outcomes.
+- A bar plot indicating survival based on gender, providing a visual comparison of survival rates between males and females.
+- A histogram representing the fare distribution, revealing insights into the range and distribution of ticket prices.
+- A bar plot showing the relationship between embarked location and survival status, providing information about the survival rates by embarkation point.
+- A unique violin plot was created to combine information about passenger class, age, and survival status. This plot provides a visually appealing representation of how these factors interact, using the width of each section to show the density of data points at different age levels.
+- A bar plot was created providing a clear comparison of survival rates across different classes. Additionally, a grouped bar plot was generated to compare survival rates by gender within each class. Finally, a boxplot was used to compare fare distributions between survivors and non-survivors.
 
-- The ``.gitignore`` file is utilized to specify which files or directories should be excluded from version control when utilizing Git.
-
-- A ``Makefile`` is present as a configuration file designed for automating tasks and facilitating software building in Unix-based systems. It contains instructions and dependencies for tasks like code compilation, test execution, and other development processes.
-
-- The ``requirements.txt`` file is used to define the project's dependencies, including libraries and packages needed for its execution.
-
-- For testing purposes, there's a ``test_main.py`` file designed to work seamlessly in various Integrated Development Environments (IDEs).
-
-- The ``img`` directory is used to store any result images.
-
-## GitHub Actions
-GitHub Actions is used to run the Makefile in this order: `make install`, `make lint`, `make format`, `make test`.
-
-``Makefile`` recipe results:
-***
-![Alt text](img/install_result.png)
-***
-![Alt text](img/lint_result.png)
-***
-![Alt text](img/format_result.png)
-***
-![Alt text](img/test_result.png)
+These tasks collectively provide a comprehensive exploration of the Titanic dataset, offering insights into factors affecting survival rates such as class, age, gender, and fare. The range of plots and analyses performed offer a well-rounded understanding of the dataset's characteristics and relationships between variables.
